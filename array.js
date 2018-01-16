@@ -28,6 +28,7 @@ function destructivelyRemoveElementFromBeginningOfArray(array) {
 }
 
 function removeElementFromBeginningOfArray(array) {
+  return [...array].slice(1)
 }
 
 function destructivelyRemoveElementFromEndOfArray(array) {
@@ -36,9 +37,12 @@ function destructivelyRemoveElementFromEndOfArray(array) {
 }
 
 function removeElementFromEndOfArray(array) {
-
+  return [...array].slice(0, array.length-1)
 }
 
 function nonDestructivelyRemoveAtIndex(array, index) {
 // using slice _and_ spread??
+  var newArray = [...array];
+  newArray.splice(index, 1);
+  return newArray;
 }
