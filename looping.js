@@ -24,18 +24,19 @@ While loops will execute the looop body if the condition is true
 */
 
 [1, 2, 3].forEach(function(element) {
-      console.log(element)
-    }
+  console.log(element)
+})
+//There was a missing ) in the forEach method above.
 
-    function loop25Times(array) {
-      for (var i = 1; i < 26; i++) {
-        array.push(`I am step number ${i} of the loop`);
-      }
-      return array;
-    }
+function loop25Times(array) {
+  for (var i = 1; i < 26; i++) {
+    array.push(`I am step number ${i} of the loop`);
+  }
+  return array;
+}
 
-    /*
-    I don't understand why the instructions say to return
-    the array that contains the 25 new statements.
-    I feel that just console logging the statements should suffice.
-    */
+/*
+I don't understand why the instructions say to return
+the array that contains the 25 new statements.
+I feel that just console logging the statements should suffice.
+*/
