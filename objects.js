@@ -23,7 +23,10 @@ delete course["title"]
 
 Object.assign({}, course, {description: "a kick-ass introduction to JS"})
 
-
+function twoObjects(originalObject, newObject) {
+  let theTwoObjects = Object.assign({}, originalObject, newObject);
+  return theTwoObjects;
+}
 
 /*
 Object.assign takes in 3 arguments
