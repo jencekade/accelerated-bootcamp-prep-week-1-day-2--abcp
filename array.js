@@ -46,3 +46,12 @@ function nonDestructivelyRemoveAtIndex(array, index) {
   newArray.splice(index, 1);
   return newArray;
 }
+
+/*
+The slice method takes in 2 arguments
+1)  Zero-based index at which to begin extraction.
+2)  Zero-based index before which to end extraction.
+If only one arguement, it automatically assumes that first arguemtn is 0.
+push(), shift(), pop(), unshift() returns a number with is length of array
+so returning the array is needed to print out the array to console.
+*/
